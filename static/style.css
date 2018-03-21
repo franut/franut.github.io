@@ -1,0 +1,104 @@
+/* CSS Stylesheet for the COMP249 Jobs Board */
+/* Author: Frankie Ian 44918054              */
+
+html {
+    background-color: #ffffff;
+    color: #1d1e1e;
+    font-family: sans-serif;
+
+}
+
+body{
+	margin: 0;
+	padding:0;
+
+}
+
+.Logo{
+    max-width: 20%;
+    padding:0;
+    margin-left: 10px;
+}
+
+
+.nav ul {
+	list-style:none;
+    left: 5px;
+	padding: 5px;
+    margin:0;
+    background-color: #ccf8ff;
+    text-align: center;
+
+}
+
+.nav li {
+    font-size: 17px;
+    text-align:center;
+    background-color: #87CEEB;
+    border-radius: 10px;
+    margin-left:10px;
+    
+}
+
+#active{
+	background-color:gray;
+}
+.nav a{
+	text-decoration:none;
+	color: white;
+	display:block;
+}
+
+.nav a:hover{
+    border-radius: 10px;
+	background-color:#005f5f;
+	transition: .3s background-color;
+
+}
+
+.job {
+    width: 40%;
+    margin:auto;
+    margin-bottom: 10px;
+    margin-top:10px;
+    padding:10px;
+    border: 2px solid #ADD8E6;
+}
+.jobtitle {
+    font-family:  "Century Gothic";
+    font-size:17px;
+    text-decoration: #ADD8E6 solid underline;
+    font-weight:bold;
+    display:inline;    
+}
+.location{
+    display:inline-block;
+    float:right;
+
+   
+}
+.description{
+    padding-top: 10px;
+    width:50%;
+    float:inherit;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+p{
+    margin: 10px;
+    padding-right:10px;
+	text-align: right;
+
+}
+
+
+@media screen and (min-width: 600px){
+	.nav li {
+		width: 120px;
+		border-bottom: none;
+		height: 50px;
+		line-height: 50px;
+		display:inline-block;
+		margin-right:-4px;
+	}
+}
