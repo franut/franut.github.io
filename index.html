@@ -1,89 +1,21 @@
 <!DOCTYPE html>
-<html>
-<head lang="en">
+<html lang="en">
+<head>
     <meta charset="UTF-8">
-    <meta name="author" content="Your Name">
-    <title>Welcome to the Job Board</title>
-    <link rel="stylesheet" href="static/style.css" type="text/css">
-</head>
+    <title>Web Timeline</title>
+
+    <link title="timeline-styles" rel="stylesheet"
+          href="https://cdn.knightlab.com/libs/timeline3/latest/css/timeline.css">
+
+    <script src="https://cdn.knightlab.com/libs/timeline3/latest/js/timeline.js"></script>
+
+  </head>
 <body>
-	<header>
-    
-        <img class="Logo" src="static/Logo.png" alt="Logo">
-    
-	</header>
-	
-	<div class="nav">
-	  <ul>
-		<li id="active"><a href="/">Home</a></li>
-		<li><a href="/about">About</a></li>
-		<li><a href="/account">Your Account</a></li>
-	  </ul>
-	</div>
 
-<!-- these are sample job postings to use in your design
-     use as many as you wish to best illustrate your
-     design or make your own.  You can modify the structure of the
-     HTML to add more fields or lay out the text differently.
+<div id='timeline-embed' style="width: 100%; height: 600px"></div>
 
-     Note that you need to add other elements to this page - branding, navigation, links, advertising...
-     -->
-
-
-<div class="job">
-    <div class="jobtitle">Junior Software Engineer</div>
-    <div class="location">Sydney NSW</div>
-    <div class="company">MedicalMaster</div>
-    <div class="description">
-        You are passionate about technology and writing high quality software. Delivering
-        world class software that delights our customers and exceeds the expectations of...
-    </div>
-</div>
-
-<div class="job">
-    <div class="jobtitle">Junior Software Engineer</div>
-    <div class="location">Sydney NSW</div>
-    <div class="company">SXY Software</div>
-    <div class="description">
-        SXY Software is a leading provider of innovative software solutions for the
-        Global Pasta industry. We are currently seeking a Junior Software Engineer to...
-    </div>
-</div>
-
-<div class="job">
-    <div class="jobtitle">Junior Software Engineer - Flight Management</div>
-    <div class="location">Pyrmont NSW</div>
-    <div class="company">Ansett Airlines</div>
-    <div class="description">
-        Coordinating product development between several impacted developers across various
-        Ansett sites. Experience as software developer in C++ in a Linux...
-    </div>
-</div>
-
-
-<div class="job">
-    <div class="jobtitle">Junior Full Stack Developer</div>
-    <div class="location">Macquarie Park NSW</div>
-    <div class="company">Power People</div>
-    <div class="description">
-        As a Junior Full Stack Developer, you will report into the Lead Developer in
-        an Agile team and contribute to the development of world leading...
-    </div>
-</div>
-
-
-<div class="job">
-    <div class="jobtitle">Graduate - Junior Database SQL/BI Developer | BI Team Finance</div>
-    <div class="location">Elsewood Park NSW</div>
-    <div class="company">9G Futures</div>
-    <div class="description">
-        We are looking for a talented Grad to Junior level Database SQL Developer to
-        work with the Business Intelligence IT team developing greenfield and brownfield
-        data warehouse and in-house reporting solution to meet business requirements.
-    </div>
-</div>
-
-
-<p>Jobs 1 to 10 of 50</p>
+<script type="text/javascript">
+  timeline = new TL.Timeline('timeline-embed', 'https://docs.google.com/spreadsheets/d/1rITg1dMFxiWvyqS7yiB0EAdHsIMDSy3JKpd4eluPMAM/edit?usp=sharing');
+</script>
 </body>
 </html>
