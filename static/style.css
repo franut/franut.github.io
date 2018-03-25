@@ -18,8 +18,16 @@ body{
     max-width: 20%;
     padding:0;
     margin-left: 10px;
+    
 }
 
+input[type=text] {
+    float:right;
+    display:inline;
+    font-size: 17px;
+    border-color: #ccf8ff;
+    border-radius:5px;
+}
 
 .nav ul {
 	list-style:none;
@@ -56,13 +64,37 @@ body{
 
 }
 
+.Options{
+    margin-top: 10px;
+    display: inline-block;
+    float:right;
+    margin-right: 17%;
+    border: 2px solid #ADD8E6;
+    padding:10px;
+    
+}
+.Options h4 {
+    margin:0;
+    text-decoration:underline;
+    margin-bottom: 10px;
+}
+
+.Options p {
+    text-align: left;
+    margin:0;
+    margin-top: 10px;
+    display: inline;
+}
 .job {
     width: 40%;
-    margin:auto;
+    max-width: 50%;
+    margin-left: 30%;
     margin-bottom: 10px;
     margin-top:10px;
     padding:10px;
-    border: 2px solid #ADD8E6;
+    border: 2px solid #ADD8E6; 
+    display: inline-block;
+    
 }
 .jobtitle {
     font-family:  "Century Gothic";
@@ -74,15 +106,46 @@ body{
 .location{
     display:inline-block;
     float:right;
-
-   
+    
 }
+
 .description{
     padding-top: 10px;
-    width:50%;
-    float:inherit;
+    width:60%;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+   
+
 }
+
+.joblogo img{
+    max-width: 15%;
+    float:right;
+}
+
+.pagination{
+    padding:10px;
+    text-align: center;
+    margin-bottom: 10px;
+
+}
+
+.pagination a{
+    border-radius: 10px;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    padding: 8px 16px;
+}
+
+.pagination a.active{
+    background-color: #87CEEB;
+}
+
+.pagination a:hover {
+    background-color:gray;
+	transition: .3s background-color;
+}
+
 
 p{
     margin: 10px;
